@@ -102,7 +102,10 @@ public class Calculator {
 	int divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
+		if(second==0) 
+		  return (int)Double.NaN ;
 		return first / second;
+		
 	}
 
 	int mod(int first, int second) {
